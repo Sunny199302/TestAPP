@@ -16,7 +16,7 @@ import org.testng.annotations.AfterMethod;
 
 public class NewTestAndroid {
 	private AppiumDriver driver;
-	
+
   @Test
   public void f() {
 	  WebElement element = null;
@@ -32,7 +32,7 @@ public class NewTestAndroid {
 		  //获取结果
 		  String result = driver.findElementByClassName("android.widget.EditText").getText();
 		  System.out.println("The result is" + result);
-  }
+  }//testing GitHub输出结果
   @BeforeMethod
   public void calc() throws Exception {
 	  	final DesiredCapabilities capabilities = new DesiredCapabilities();
@@ -44,7 +44,7 @@ public class NewTestAndroid {
 		capabilities.setCapability("appActivity", "com.android.calculator2.Calculator");//打开APP的activity
 		//driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
 		driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);//Appium地址
-    
+
 		System.out.println("App is launched!");//设置输出，判断安装运行APP是否成功
 	}
 //  public void beforeMethod() {
